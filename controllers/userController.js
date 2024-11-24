@@ -88,8 +88,6 @@ export const getAllAdmins = async (req, res) => {
 export const getAllTeachers = async (req, res) => {
   try {
       
-
-    
       const teachers = await User.find({ role: "teacher" });
 
       res.status(200).json({

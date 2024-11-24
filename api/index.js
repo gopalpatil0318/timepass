@@ -18,6 +18,9 @@ app.use("/api/v1", subjectRoutes);
 app.use("/api/v1", practicalRoutes);
 app.use("/api/v1", userRoutes);
 
+app.get('/',(req,res)=>{
+  res.send("Welcome Practical Management");
+})
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
